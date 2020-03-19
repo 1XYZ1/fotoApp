@@ -1,1 +1,260 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+}
+
+.text-green {
+    color: green;
+}
+
+
+/* FOTOS */
+
+.img {
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 20%;
+}
+
+.card-picture {
+    width: 98%;
+    margin-bottom: 2%;
+}
+
+.container {
+    min-height: 98%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.search-form {
+    width: 50%;
+}
+
+.button-container {
+    margin-bottom: 1%;
+}
+
+.main-container {
+    margin-top: 40px;
+}
+
+.title {
+    padding-bottom: 10%;
+}
+
+
+/* CARGAR IMAGENES */
+
+table {
+    width: 70%;
+}
+
+.frame {
+    position: relative;
+    bottom: 35px;
+    width: 330px;
+    height: 300px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: linear-gradient(to top right, #2e2efe 0%, #0101df 100%);
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 260px;
+    border-radius: 3px;
+    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.title-upload {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+}
+
+.dropzone {
+    width: 100px;
+    height: 80px;
+    border: 1px dashed #999;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.dropzone2 {
+    border: 3px solid blue !important;
+}
+
+.upload-icon {
+    margin: 25px 2px 2px 2px;
+}
+
+.upload-input {
+    position: relative;
+    top: -62px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.button button,
+.button a {
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+
+/* TABLA */
+
+
+/*** Table Styles **/
+
+.table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 30%;
+    margin: auto;
+    max-width: 100%;
+    padding: 5px;
+    width: 80%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+}
+
+th {
+    color: #d5dde5;
+    background: linear-gradient(to top right, #2e2efe 0%, #0101df 100%);
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 24px;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+    border-right: none;
+}
+
+tr {
+    border-top: 1px solid #c1c3d1;
+    border-bottom: 1px solid #c1c3d1;
+    color: #666b85;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+    background: #4e5066;
+    color: #ffffff;
+    border-top: 1px solid #22262e;
+}
+
+tr:first-child {
+    border-top: none;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+    background: #ebebeb;
+}
+
+tr:nth-child(odd):hover td {
+    background: #4e5066;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+td {
+    background: #ffffff;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 20px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #c1c3d1;
+}
+
+td:last-child {
+    border-right: 0px;
+}
+
+th.text-left {
+    text-align: left;
+}
+
+th.text-center {
+    text-align: center;
+}
+
+th.text-right {
+    text-align: right;
+}
+
+td.text-left {
+    text-align: left;
+}
+
+td.text-center {
+    text-align: center;
+}
+
+td.text-right {
+    text-align: right;
+}

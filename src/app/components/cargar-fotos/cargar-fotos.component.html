@@ -1,0 +1,52 @@
+<div class="container">
+    <div fxLayout="column" fxLayoutAlign="center center">
+        <div class="frame">
+            <div class="center" [archivos]="archivos2" appNgDropFiles (mouseSobre)="sobreElemento = $event">
+                <div class="title-upload">
+                    <h1>CARGAR IMAGEN</h1>
+                </div>
+
+                <div class="dropzone" [ngClass]="{ dropzone2: sobreElemento }">
+                    <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                    <input type="file" class="upload-input" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <table class="table-fill">
+                <thead>
+                    <tr>
+                        <th class="text-left">Nombre</th>
+                        <th class="text-left">Peso</th>
+                        <th class="text-left" fxShow.xs="false" fxShow="true">
+                            Carga
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr *ngFor="let archivo of archivos2" [ngClass]="{ 'text-green': archivo.progreso >= 100 }">
+                        <td class="text-left">
+                            {{ archivo.nombreArchivo }}
+                        </td>
+                        <td class="text-left">
+                            {{ archivo.size / 1024 / 1024 | number: ".2-2" }} MB
+                        </td>
+                        <td class="text-center" fxShow.xs="false" fxShow="true">
+                            <mat-progress-bar mode="determinate" [value]="archivo.progreso"></mat-progress-bar>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="button">
+            <button mat-raised-button color="primary" [disabled]="archivos2.length === 0" (click)="CargarImagenes()">
+        Subir a firebase
+      </button>
+            <button mat-raised-button color="warn" [disabled]="archivos2.length === 0" (click)="limpiarArchivos()">
+        Limpiar
+      </button>
+        </div>
+    </div>
+</div>
